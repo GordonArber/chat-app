@@ -8,7 +8,7 @@
   height: 15px;
   padding: 25px;
   border-radius: 100%;
-  background: #ecf0f3;
+  background: lightgray;
   user-select: none;
   border: none;
   text-decoration: none;
@@ -21,7 +21,6 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #ecf0f3;
   border-radius: 100%;
   width: 40px;
   height: 40px;
