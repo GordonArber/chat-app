@@ -20,7 +20,10 @@ export function Sidebar() {
         </div>
       </div>
       <div className="sidebar__search">
-        <IconButton Icon={MdSearch} />
+        <div className="sidebar__searchContainer">
+          <MdSearch />
+          <input placeholder="Search or start new chat" type="text" />
+        </div>
       </div>
       <div className="sidebar_chats"></div>
     </div>
