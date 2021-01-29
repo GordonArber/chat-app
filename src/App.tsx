@@ -1,9 +1,13 @@
 import "./app.css";
-
+import { Sidebar } from "./Sidebar";
 function App() {
   return (
-    <div className="App">
-      <h1>Lets Build</h1>
+    //BEM naming convention
+    <div className="app">
+      <div className="app__body">
+        <Sidebar />
+        {/* Chat */}
+      </div>
     </div>
   );
 }
