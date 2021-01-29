@@ -1,0 +1,35 @@
+.avatar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  padding: 25px;
+  border-radius: 100%;
+  background: #ecf0f3;
+  user-select: none;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  outline: none;
+}
+
+.avatar__container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f3;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  width: 40px;
+}
