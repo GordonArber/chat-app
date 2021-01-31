@@ -7,7 +7,7 @@
 
 .app__body {
   display: flex;
-  background-color: white;
+  background-color: ghostwhite;
   margin-top: -50px;
   height: 90vh;
   width: 90vw;

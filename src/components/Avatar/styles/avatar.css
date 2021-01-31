@@ -8,7 +8,7 @@
   height: 5px;
   padding: 20px;
   border-radius: 100%;
-  background: lightgray;
+  background: transparent;
   user-select: none;
   border: none;
   text-decoration: none;
@@ -26,7 +26,7 @@
   height: 40px;
 }
 
-img {
+.avatar__container > img {
   display: flex;
   align-items: center;
   border-radius: 100%;
