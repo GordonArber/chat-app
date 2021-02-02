@@ -1,9 +1,9 @@
-import "./app.css";
-import { Chat } from "./Chat/Chat";
+import "./styles/app.css";
+import { Chat } from "./Chat";
 import { Sidebar } from "./Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Login } from "./Login/Login";
-import { UserContext } from "./StateProvider/StateProvider";
+import { Login } from "./Login";
+import { UserContext } from "../../utils/StateProvider";
 import { useMemo, useState } from "react";
 
 export function App() {

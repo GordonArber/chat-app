@@ -1,10 +1,15 @@
 import { useContext } from "react";
-import { auth, provider } from "../firebase";
-import { UserContext } from "../StateProvider/StateProvider";
+import { auth, provider } from "../../../utils/firebase";
+import { UserContext } from "../../../utils/StateProvider";
 import "./styles/login.css";
+import firebase from "firebase/app";
+
+interface UserContextType {
+  setUser: (T: firebase.User | null) => void;
+}
 
 export function Login() {
-  const { setUser }: any = useContext(UserContext);
+  const { setUser } = useContext<UserContextType>(UserContext);
 
   const signIn = () => {
     auth()

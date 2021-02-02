@@ -1,9 +1,10 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { Avatar } from "../components/Avatar/Avatar";
-import { db } from "../firebase";
-import { UserContext } from "../StateProvider/StateProvider";
+import { Avatar } from "../../../../components/Avatar";
+import { db } from "../../../../utils/firebase";
+import { UserContext } from "../../../../utils/StateProvider";
 import "./styles/sidebar-chat.css";
+import firebase from "firebase/app";
 
 interface SidebarChatProps {
   id?: string;
@@ -19,7 +20,7 @@ export function SidebarChat({
   name,
 }: SidebarChatProps) {
   const [seed, setSeed] = useState(0);
-  const [messages, setMessages] = useState<any>();
+  const [messages, setMessages] = useState<firebase.firestore.DocumentData>();
 
   const user = useContext(UserContext);
 

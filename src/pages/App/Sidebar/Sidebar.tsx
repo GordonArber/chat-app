@@ -1,14 +1,15 @@
-import "./sidebar.css";
-import { Avatar } from "./components/Avatar/Avatar";
+import "./styles/sidebar.css";
+import { Avatar } from "../../../components/Avatar";
 import { MdChat, MdDonutLarge, MdMoreVert, MdSearch } from "react-icons/md";
-import { IconButton } from "./components/IconButton/IconButton";
-import { SidebarChat } from "./SidebarChat/SidebarChat";
+import { IconButton } from "../../../components/IconButton";
+import { SidebarChat } from "./SidebarChat";
 import { useState, useEffect, useContext } from "react";
-import { db } from "./firebase";
-import { UserContext } from "./StateProvider/StateProvider";
+import { db } from "../../../utils/firebase";
+import { UserContext } from "../../../utils/StateProvider";
+import firebase from "firebase/app";
 
 export function Sidebar() {
-  const [rooms, setRooms] = useState<any>([]);
+  const [rooms, setRooms] = useState<firebase.firestore.DocumentData>([]);
 
   const { user } = useContext(UserContext);
 
@@ -45,7 +46,7 @@ export function Sidebar() {
       </div>
       <div className="sidebar_chats">
         <SidebarChat addNewChat />
-        {rooms.map((room: any) => (
+        {rooms.map((room: firebase.firestore.DocumentData) => (
           <SidebarChat
             key={room.id}
             id={room.id}
