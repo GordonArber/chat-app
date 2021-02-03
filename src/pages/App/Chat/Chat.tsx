@@ -6,7 +6,7 @@ import "./styles/chat.css";
 import { IconButton } from "../../../components/IconButton";
 import { useParams } from "react-router-dom";
 import { db } from "../../../utils/firebase";
-import { UserContext } from "../../../utils/StateProvider";
+import { UserContext } from "../../../utils/contexts/userContext";
 import firebase from "firebase/app";
 
 interface ParamTypes {

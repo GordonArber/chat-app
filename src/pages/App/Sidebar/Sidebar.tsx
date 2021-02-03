@@ -5,7 +5,7 @@ import { IconButton } from "../../../components/IconButton";
 import { SidebarChat } from "./SidebarChat";
 import { useState, useEffect, useContext } from "react";
 import { db } from "../../../utils/firebase";
-import { UserContext } from "../../../utils/StateProvider";
+import { UserContext } from "../../../utils/contexts/userContext";
 import firebase from "firebase/app";
 
 export function Sidebar() {

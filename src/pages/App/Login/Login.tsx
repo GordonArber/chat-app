@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { auth, provider } from "../../../utils/firebase";
-import { UserContext } from "../../../utils/StateProvider";
+import { UserContext } from "../../../utils/contexts/userContext";
 import "./styles/login.css";
 import firebase from "firebase/app";
 

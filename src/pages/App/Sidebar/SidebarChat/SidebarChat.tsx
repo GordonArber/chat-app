@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Avatar } from "../../../../components/Avatar";
 import { db } from "../../../../utils/firebase";
-import { UserContext } from "../../../../utils/StateProvider";
+import { UserContext } from "../../../../utils/contexts/userContext";
 import "./styles/sidebar-chat.css";
 import firebase from "firebase/app";
 

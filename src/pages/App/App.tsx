@@ -3,7 +3,7 @@ import { Chat } from "./Chat";
 import { Sidebar } from "./Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Login } from "./Login";
-import { UserContext } from "../../utils/StateProvider";
+import { UserContext } from "../../utils/contexts";
 import { useMemo, useState } from "react";
 
 export function App() {
